@@ -31,7 +31,8 @@ public class ContactFormStepDefinitions {
     }
     @Given("I am on the contact form page")
     public void iAmOnTheContactFormPage() {
-        contactFormPage.goToUrl("https://www.intrum.lv/saistibu-parvaldisana/sazinieties-ar-mums/");
+        String url = WebActions.getProperty("url");
+        contactFormPage.goToUrl(url);
     }
 
     @And("I accept the cookies")

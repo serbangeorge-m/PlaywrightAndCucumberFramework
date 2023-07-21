@@ -1,6 +1,7 @@
 package factory;
 
 import com.microsoft.playwright.*;
+import utils.WebActions;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,13 +19,14 @@ public class DriverFactory {
     }
 
     public static Page initDriver(String browserName) {
+        boolean headless = Boolean.valueOf(WebActions.getProperty("headless"));
         BrowserType browserType = browserTypes.get(browserName);
         if (browserType == null) {
             throw new IllegalArgumentException("Could not Launch Browser for type " + browserName);
         }
 
         // Launch the browser
-        Browser browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(true));
+        Browser browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(headless));
         threadLocalBrowser.set(browser);
 
         // Create a new context and page
