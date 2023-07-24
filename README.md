@@ -1,22 +1,3 @@
-<!-- ABOUT THE PROJECT -->
-
-## About the Project
-
-Playwright Demo - This project is based on Microsoft Playwright which enables reliable end-to-end testing for modern web
-apps.
-
-Top Features:
-
-- Easy to Configure.
-- Auto-waits for all the relevant checks to pass and only then performs the requested action.
-- Execution of test case is faster when compared with other competitive framework in market.
-- Supports Heedful/Headless mode execution for Firefox/Webkit/Google Chrome/Chromium/MS Edge on Windows/Linux/Mac
-  machines.
-- Rerun Failed Test cases
-- Supports 'download' event monitoring, so there is no need for user to actually wait for downloads to finish.
-- Supports Serial and Parallel execution.
-- Spark PDF/HTML Reports are generated after execution with an option to capture screenshot/video/trace file on failure.
-- Nonetheless, Support from Microsoft so FREQUENT RELEASES and turn around time for any queries is 48 hours.
 
 ### Built With
 
